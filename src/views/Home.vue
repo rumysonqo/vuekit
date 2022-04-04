@@ -142,7 +142,7 @@
         },
       async kit_item(){
         try{
-          let datos=await axios.get('http://localhost:3000')
+          let datos=await axios.get('http://192.168.1.2:3000')
           console.log(datos.data);
           this.ds_kit=await datos.data 
         }catch(error){
